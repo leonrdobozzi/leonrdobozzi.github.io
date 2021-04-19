@@ -107,10 +107,10 @@ header .call-name-description h3{
     font-size: 24px;
     color: #fff;
     font-family: 'Raleway', sans-serif;
-    width: 40%;
+    width: 90%;
     text-align: center;
     font-weight: 200;
-    margin: 15px 0;
+    margin: 25px 0;
 }
 
 .about-me .container-about main button{
@@ -325,7 +325,11 @@ footer small{
     margin: 25px 0;
 }
 
-
+@media (min-width: 1072px){
+    .about-me .container-about main p{
+        width: 70%;
+    }
+}
 
 @media (max-width: 576px){
     header .call-name-description .name h1{
@@ -356,13 +360,21 @@ footer small{
         width: 230px;
     }
 
+    
+
     .my-skills .content-skills #icon-skill{
         width: 90px;
         height: 90px;
     }
 
+    @keyframes opacidade{
+        0%{opacity: 1;}
+        50%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+
     .my-skills .content-skills h3{
-        font-size: 24px;
+        transition: all .5s ease-in-out;
     }
 
     .my-skills .content-skills p{
