@@ -10,6 +10,18 @@ iconsSkills.forEach(element => {
         skillName.innerText = classListElement ;
         iconSkill.setAttribute('src', `./public/assets/icons/${classListElement}.svg`);
         descriptionSkill.innerText = element.getAttribute('alt')
-    })
-})
+    });
+});
 
+const setModal = document.querySelector('.set-modal');
+const modalContainer = document.querySelector('.modal-container');
+
+function openOrCloseModal(){
+    modalContainer.classList.toggle('open-modal');
+};
+
+setModal.addEventListener('click', () => openOrCloseModal())
+
+const closeModal = document.querySelector('.close');
+
+closeModal.addEventListener('click', () => openOrCloseModal())

@@ -124,6 +124,7 @@ header .call-name-description h3{
     height: 50px;
     cursor: pointer;
     transition: .4s ease-in-out;
+    outline: none;
 }
 
 .about-me .container-about main button:hover{
@@ -309,6 +310,22 @@ header .call-name-description h3{
     align-items: center;
 }
 
+.contact .social-media .social-icons img:hover{
+    animation: hovericonssocial .8s ease normal;
+}
+
+@keyframes hovericonssocial{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
 footer{
     height: 30vh;
     background: #151A1B;
@@ -423,4 +440,52 @@ footer small{
     footer small{
         font-size: 10px;
     }
+}
+
+
+/*modal*/
+
+.modal-container{
+    background: #29292980;
+    backdrop-filter: blur(15px);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+.open-modal{
+    visibility: visible;
+}
+
+.modal-social-icons{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-social-icons img{
+    width: 40px;
+    height: 40px;
+}
+
+.modal-container .close{
+    font-size: 24px;
+    color: #fff;
+    background: none;
+    border: 1px solid #fff;
+    padding: 15px 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    margin: 15px 0; 
+    cursor: pointer;
 }
