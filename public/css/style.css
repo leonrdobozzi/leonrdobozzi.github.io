@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('../assets/images/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .call-name-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header .call-name-description .name{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .call-name-description .name h1{
+    font-size: 144px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 12px;
+    color: #fff
+}
+
+
+header .call-name-description .name .name-svg-absolute{
+    position: absolute;
+}
+
+header .call-name-description h3{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.about-me{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me .container-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me .container-about .header-about{
+    display: flex;
+    height: 20vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me .container-about .header-about p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #5484FF;
+}
+
+.about-me .container-about .header-about h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.about-me .container-about .header-about hr{
+    width: 110%;
+    border: 1px solid #ffffff40;
+    margin: 20px 0;
+}
+
+.about-me .container-about main{
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about-me .container-about main p{
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    width: 40%;
+    text-align: center;
+    font-weight: 200;
+    margin: 15px 0;
+}
+
+.about-me .container-about main button{
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.about-me .container-about main button:hover{
+    background: #ffffff;
+    color: #000;
+    font-weight: 700;
+}
+
+.my-skills{
+    height: 100vh;
+}
+
+.my-skills .header-skills{
+    display: flex;
+    height: 20vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-skills .header-skills p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #5484FF;
+}
+
+.my-skills .header-skills h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.my-skills .header-skills hr{
+    width: 350px;
+    border: 1px solid #ffffff40;
+    margin: 20px 0;
+}
+.my-skills .content-skills{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.my-skills .content-skills #icon-skill{
+    width: 130px;
+    height: 130px;
+    margin: 15px 0;
+}
+
+.my-skills .content-skills p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 200;
+    width: 40%;
+    color: #fff;
+    text-align: center;
+    height: 70px;
+    margin: 15px 0;
+}
+
+.my-skills .footer-skills {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.my-skills .content-skills h3{
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+.my-skills .footer-skills img{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.my-skills .footer-skills img:hover{
+    filter: opacity(0.6);
+    transform: rotate(2deg);
+}
+
+.contact{
+    height: 100vh;
+}
+
+.contact .header-contact{
+    display: flex;
+    height: 20vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contact .header-contact p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #5484FF;
+}
+
+.contact .header-contact h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.contact hr{
+    width: 80%;
+    margin: 0 auto;
+    border: 3px solid #fff;
+}
+
+.contact .contact-forms{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 30vh;
+}
+
+.contact .contact-forms .mail,
+.contact .contact-forms .message{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contact .contact-forms .message{
+    align-items: flex-end;
+}
+
+.contact .contact-forms .mail h3,
+.contact .contact-forms .message h3{
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+.contact .contact-forms .mail p,
+.contact .contact-forms .message p{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-weight: 200;
+}
+
+.contact .social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 30vh;
+}
+
+.contact .social-media h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.contact .social-media .social-icons{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    height: 30vh;
+    background: #151A1B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer small{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    margin: 25px 0;
+}
+
+
+
+@media (max-width: 576px){
+    header .call-name-description .name h1{
+        font-size: 64px;
+    }
+    header .call-name-description .name .name-svg-absolute img{
+        width: 160px;
+    }
+
+    .about-me .container-about .header-about h3,
+    .my-skills .header-skills h3,
+    .contact .header-contact h3{
+        font-size: 36px;
+    }
+
+    .about-me .container-about main p{
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .about-me .container-about main button{
+        width: 200px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .my-skills .header-skills hr{
+        width: 230px;
+    }
+
+    .my-skills .content-skills #icon-skill{
+        width: 90px;
+        height: 90px;
+    }
+
+    .my-skills .content-skills h3{
+        font-size: 24px;
+    }
+
+    .my-skills .content-skills p{
+        font-size: 16px;
+    }
+    
+    .my-skills .footer-skills img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .contact .contact-forms .mail,
+    .contact .contact-forms .message{
+        width: 200px;
+    }
+
+    .contact .contact-forms .mail h3,
+    .contact .contact-forms .message h3{
+        font-size: 14px;
+    }
+    .contact .contact-forms .mail p,
+    .contact .contact-forms .message p{
+        font-size: 12px;
+    }
+
+    .contact .contact-forms .mail,
+    .contact .contact-forms .message{
+        align-items: center;
+        padding: 15px;
+    }
+
+    .contact .social-media h3{
+        font-family: 'Raleway', sans-serif;
+        font-size: 24px;
+    }
+
+    .contact .social-media .social-icons{
+        justify-content: space-around;
+    }
+
+    .contact .social-media .social-icons img{
+        width: 30px;
+        height: 30px;
+    }
+
+    footer small{
+        font-size: 10px;
+    }
+}
