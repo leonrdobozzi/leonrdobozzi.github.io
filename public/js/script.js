@@ -20,8 +20,21 @@ function openOrCloseModal(){
     modalContainer.classList.toggle('open-modal');
 };
 
-setModal.addEventListener('click', () => openOrCloseModal())
+setModal.addEventListener('click', () => openOrCloseModal());
 
 const closeModal = document.querySelector('.close');
 
-closeModal.addEventListener('click', () => openOrCloseModal())
+closeModal.addEventListener('click', () => openOrCloseModal());
+
+const title = document.getElementById('title');
+
+function animationTitle(distance, speed){
+    title.style.transform = `scale(${distance * speed})`;
+}
+
+window.addEventListener('scroll', () => {
+    if(scrollY > 60 && scrollY < 100){
+        animationTitle((scrollY / 35), 0.5);
+    }
+})
+
